@@ -54,6 +54,7 @@ public class SmokeTest {
             Statement statement = connection.createStatement();
             statement.execute("DROP DATABASE SAMPLE");
             statement.execute("CREATE DATABASE SAMPLE");
+            statement.execute("DROP DATABASE SAMPLE");
             String files[] = dbDir.list();
             Assert.assertTrue("Database directory is not empty after drop!", files == null || files.length == 0);
             statement.close();
