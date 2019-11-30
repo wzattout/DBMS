@@ -1,0 +1,3 @@
+[submodule "src/eg/edu/alexu/csd/oop"]
+	path = src/eg/edu/alexu/csd/oop
+	url = https://bitbucket.org/EngAhmedWaleed/70_jdbc/src
