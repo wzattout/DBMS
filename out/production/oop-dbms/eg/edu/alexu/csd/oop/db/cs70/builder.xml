@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- Configuration of the Ant build system to generate a Jar file -->
+<project name="oop-dbms" default="CreateJar">
+    <target name="CreateJar" description="Create Jar file">
+        <delete file = "Main.jar"/>
+        <delete file = "MANIFEST.MF"/>
+        <manifest file = "MANIFEST.MF">
+            <attribute name = "Main-Class" value = "eg/edu.alexu/csd/oop/db/cs70/Main"/>
+            <attribute name = "Class-Path" value = "."/>
+        </manifest>
+        <jar jarfile="Main.jar" basedir = "C:\Users\wzatt\Documents\Programming\JAVA\CSED\Y2_T1\Programming\Labs\3\oop-dbms\out\production\oop-dbms" includes="**/*"  manifest = "MANIFEST.MF"/>
+    </target>
+</project>
+
+        <!-- https://stackoverflow.com/questions/1119677/how-do-i-automatically-generate-a-jar-file-in-an-eclipse-java-project -->
+        <!-- https://www.dreamincode.net/forums/topic/158238-how-to-make-executable-jar-files-using-ant/ -->
